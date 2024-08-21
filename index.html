@@ -16,6 +16,35 @@
         </section>
         <h2 class="andy">Results shown here</h2>
         <p class="andy">Complete the form and click "calculate repayments" to see what your monthly repayments would be</p>
-    </div>
+  </div>
+    <main>
+        <h1>Mortgage Calculator</h1>
+        <form action="https://formspree.io/f/xeojrepn" method="POST">
+          <div>
+            <label for="mAmount">Mortgage Amount</label>
+            <input type="text" name="mAmount" id="mAmount" />
+          </div>
+          <div>
+            <label for="mTerm">Mortgage Term</label>
+            <input type="text" name="mTerm" id="mTerm" />
+          </div>
+          <div>
+            <label for="iRate">Interest Rate</label>
+            <input type="text" name="iRate" id="iRate" />
+          </div>
+          Choose Mortgage Type
+          <div>
+            <input type="radio" name="mType" id="repay" value="Repayment" />
+            <label for="repay">Repayment</label>
+          </div>
+          <div>
+            <input type="radio" name="mType" id="iOnly" value="interestOnly" />
+            <label for="iOnly">Interest Only</label>
+          </div>
+          <button>Calulate Repayments</button>
+  
+  
+    </main>
+  
 </body>
 </html>
