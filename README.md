@@ -7,3 +7,5 @@
 #495E22
 
 Terminal
+
+VSC
