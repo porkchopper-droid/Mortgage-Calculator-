@@ -17,44 +17,63 @@
     />
   </head>
   <body>
-    <div class="right">
-        <section>
-            <img src="./img/Screenshot from 2024-08-21 14-47-22.png" alt="logo">
-        </section>
-        <h2 class="andy">Results shown here</h2>
-        <p class="andy_one">Complete the form and click "calculate repayments" to see what your monthly repayments would be</p>
-  </div>
     <main>
-      <div class="left">
-        <h1>Mortgage Calculator</h1>
-        <form action="https://formspree.io/f/xeojrepn" method="POST">
-          <div>
-            <label for="mAmount">Mortgage Amount</label>
-            <input type="text" name="mAmount" id="mAmount" />
+      <div class="wrapper">
+        <div class="left">
+          <div class="leftInner">
+            <form action="https://formspree.io/f/xeojrepn" method="POST">
+              <div class="inlineTop">
+                <h3>Mortgage Calculator</h3>
+                <input type="reset" value="Clear all" id="clearAll" />
+              </div>
+
+              <div>
+                <label for="mAmount" class="block">Mortgage Amount</label>
+                <input type="text" name="mAmount" id="mAmount" />
+              </div>
+              <div id="shortForms">
+                <div>
+                  <label for="mTerm" class="block">Mortgage Term</label>
+                  <input type="text" name="mTerm" id="mTerm" />
+                </div>
+                <div>
+                  <label for="iRate" class="block">Interest Rate</label>
+                  <input type="text" name="iRate" id="iRate" />
+                </div>
+              </div>
+              <p id="mType">Mortgage Type</p>
+              <div class="border">
+                <input type="radio" name="mType" id="repay" value="Repayment" />
+                <label for="repay">Repayment</label>
+              </div>
+              <div class="border">
+                <input
+                  type="radio"
+                  name="mType"
+                  id="iOnly"
+                  value="interestOnly"
+                />
+                <label for="iOnly">Interest Only</label>
+              </div>
+              <button>
+                <i class="fa-solid fa-calculator"></i>Calulate Repayments
+              </button>
+            </form>
           </div>
-          <div id="shortForms">
-            <div>
-              <label for="mTerm">Mortgage Term</label>
-              <input type="text" name="mTerm" id="mTerm" />
-            </div>
-            <div>
-              <label for="iRate">Interest Rate</label>
-              <input type="text" name="iRate" id="iRate" />
-            </div>
-          </div>
-          Choose Mortgage Type
-          <div class="border">
-            <input type="radio" name="mType" id="repay" value="Repayment" />
-            <label for="repay">Repayment</label>
-          </div>
-          <div class="border">
-            <input type="radio" name="mType" id="iOnly" value="interestOnly" />
-            <label for="iOnly">Interest Only</label>
-          </div>
-          <button>
-            <i class="fa-solid fa-calculator"></i>Calulate Repayments
-          </button>
-        </form>
+        </div>
+        <div class="right">
+          <section>
+            <img
+              src="./img/Screenshot from 2024-08-21 14-47-22.png"
+              alt="logo"
+            />
+          </section>
+          <h2 class="andy">Results shown here</h2>
+          <p class="andy_one">
+            Complete the form and click "calculate repayments" to see what your
+            monthly repayments would be
+          </p>
+        </div>
       </div>
     </main>
   </body>
