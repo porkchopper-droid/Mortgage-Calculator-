@@ -1,8 +1,38 @@
 .right {
     border: 2px solid;
     width: 22rem;
+    height: 25rem;    
+}
+
+.right {
+    border: 2px solid;
+    width: 22rem;
     height: 25rem;
-    
+    text-align: center;    
+    background-color: #143040;
+    border-radius: 3rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+img {
+    width: 40%;
+    position: relative;
+    top: 5rem;
+}
+
+.andy {
+    padding-bottom: 0;
+    margin-top: 6rem;
+    text-align: center;
+    color: #FAFEFE;
+}
+
+.andy_one {
+    color: #8CA9BB;
+    padding: 0 0.8rem;
+    font-size: .8rem;
 }
 
 div {
